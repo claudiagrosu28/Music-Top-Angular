@@ -1,0 +1,11 @@
+<app-add-song (onAddSong)="addSong($event)"></app-add-song>
+<p *ngFor="let song of songs; let i=index">
+  {{i+1}}. Artist:{{ song.artist }} Song name:{{ song.name }} Votes:{{ song.votes }}
+  <app-button text="Vote" (click)="onVote(song)" class="button-33"></app-button>
+  &nbsp;
+  <app-button
+    text="Delete"
+    (click)="onDelete(song)"
+    class="button-33"
+  ></app-button>
+</p>

@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="artist">Artist: </label>
+    <input type="artist" name="artist" [(ngModel)]="artist" id="artist-input" />
+    &nbsp;
+    <label for="name">Song name: </label>
+    <input type="name" name="name" [(ngModel)]="name" id="song-input" />
+    &nbsp;
+    <input type="submit" value="Add Song" class="button-33" />
+  </div>
+</form>
